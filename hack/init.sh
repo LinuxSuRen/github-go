@@ -8,3 +8,4 @@ fi
 find . -name "*.yaml" -exec sed -i '' s/github-go/"$1"/ {} +
 find . -name "*.yml" -exec sed -i '' s/github-go/"$1"/ {} +
 find . -name "*.md" -exec sed -i '' s/github-go/"$1"/ {} +
+find . -name "*.mod" -exec sed -i '' s/github-go/"$1"/ {} +

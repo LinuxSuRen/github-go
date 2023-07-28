@@ -6,6 +6,7 @@ run:
 	go run main.go
 
 fmt:
+	go mod tidy
 	go fmt ./...
 
 copy: build

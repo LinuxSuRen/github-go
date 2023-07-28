@@ -1,17 +1,13 @@
 package main
 
 import (
-	"github.com/spf13/cobra"
+	"os"
+
+	"github.com/linuxsuren/github-go/cmd"
 )
 
-func main()  {
-	cmd := &cobra.Command{
-		Use: "github-go",
-		Run: func(cmd *cobra.Command, args []string) {
-			cmd.Println("hello")
-		},
-	}
-	if err := cmd.Execute(); err != nil {
-		panic(err)
+func main() {
+	if err := cmd.NewRoot().Execute(); err != nil {
+		os.Exit(1)
 	}
 }

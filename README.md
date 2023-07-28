@@ -8,7 +8,7 @@
 
 You can use this template repository via the following command:
 
-`gh repo create --public -p linuxsuren/github-go -y <project-name>`
+`gh repo create --public -p linuxsuren/github-go <project-name>`
 
 # Clean
 
